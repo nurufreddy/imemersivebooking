@@ -22,6 +22,8 @@ End-to-end tests drive a real browser with WebGL. Either install Playwright's Ch
 
 The build uses a relative base, so `dist/` can be served from any static host or sub-path (for example GitHub Pages).
 
+**Live demo:** https://immersive-booking.vercel.app. It's hosted on Vercel using the settings in `vercel.json` (Vite, `npm ci`, `npm run build`, `dist/`). The Vercel project is connected to this GitHub repository, so every push to `main` redeploys. To deploy manually from a local checkout, run `vercel deploy --prod`.
+
 Useful URL flags: `?fallback` forces the lightweight non-WebGL seat map; `?e2e` exposes a small test hook on `window.__seatPreview`.
 
 ## Controls
